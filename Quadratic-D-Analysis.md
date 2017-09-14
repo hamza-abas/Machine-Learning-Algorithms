@@ -1,4 +1,4 @@
-## "Quadratic Discriminant Analysis Non-linear classification decision boundaries."
+## Quadratic Discriminant Analysis Non-linear classification decision boundaries.
 
 
 
@@ -11,12 +11,12 @@
   
   
   
-* **Abstract .................................................   I**
-* **Getting and cleaning the data.............................   II**
-* **Exploration Analysis......................................   III**
-* **Model Building ..........................................  IV** 
-* **Predicting ...............................................    V**  
-* **Evaluating model accuracy............................... VI**  
+* **Abstract**
+* **Getting and cleaning the data**
+* **Exploration Analysis**
+* **Model Building** 
+* **Predicting**  
+* **Evaluating model accuracy**  
 
                                   
 

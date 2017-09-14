@@ -1,4 +1,4 @@
-## "Pattern recognition in breast cancer data with K-nearest neighbors algorithm"
+## Pattern recognition in breast cancer data with K-nearest neighbors algorithm
 
 
                                   
@@ -10,16 +10,14 @@
   
   
   
-* **Abstract .................................................   I**
-* **Getting and cleaning the data.............................   II**
-* **Exploration Analysis......................................   III**
-* **Model Building ..........................................  IV** 
-* **Predicting ...............................................    V**  
-* **Evaluating model accuracy............................... VI**  
+* **Abstract**
+* **Getting and cleaning the data**
+* **Exploration Analysis**
+* **Model Building** 
+* **Predicting**  
+* **Evaluating model accuracy**  
 
-                                  
-
-
+                              
 
 
 

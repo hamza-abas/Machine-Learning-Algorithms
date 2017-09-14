@@ -1,4 +1,4 @@
-## "Titanic Kaggle Competition - Machine Learning"
+## Titanic Kaggle Competition - Machine Learning
 
 
 
@@ -11,15 +11,14 @@
   
   
   
-* **Abstract .................................................   I**
-* **Getting and cleaning the data.............................   II**
-* **Exploration Analysis......................................   III**
-* **Model Building ..........................................  IV** 
-* **Predicting ...............................................    V**  
-* **Evaluating model accuracy............................... VI**  
+* **Abstract**
+* **Getting and cleaning the data**
+* **Exploration Analysis**
+* **Model Building** 
+* **Predicting**  
+* **Evaluating model accuracy**  
 
-                                  
-
+                              
 
 
 
@@ -244,7 +243,7 @@ plot2
 
 The model We are going to build is logistic regression, logistic regression models the probability that  **Y** belongs to a particular categories. In this case our Y is **Survived** variable. We need to model the functional form to prevent values from exceeding [0,1]. in order to maintain the probability within the expected range We use the **logistic function** and P(X) will never decrease below 0 and never exceed 1.
 
-![plot of chunk unnamed-chunk-10](/Users/hamze/Desktop/Regression_Model/figures/logistic_Function.png)
+![plot of chunk unnamed-chunk-10](figure/logistic_Function.png)
 
 #### Multiple predictors
 

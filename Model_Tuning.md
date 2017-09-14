@@ -1,4 +1,4 @@
-# "Tuning Machine Learning Algorithm"
+# Tuning Machine Learning Algorithm
 
 
 
@@ -9,18 +9,14 @@
   
   
   
-  
-  
-* **Abstract .................................................   I**
-* **Getting and cleaning the data.............................   II**
-* **Exploration Analysis......................................   III**
-* **Model Building ..........................................  IV** 
-* **Predicting ...............................................    V**  
-* **Evaluating model accuracy............................... VI**  
+* **Abstract**
+* **Getting and cleaning the data**
+* **Exploration Analysis**
+* **Model Building** 
+* **Predicting**  
+* **Evaluating model accuracy**  
 
-                                  
-
-
+                              
 
 
 
@@ -39,12 +35,12 @@
 Model tuning is substantially required whether the target variable is qualitative or quantitative. It is considered a highly profitable approach for predictive modelling. Having that in mind at first hand, We may avoid having in our model things like **Multicollinearity, Redundancy,Over fitting, Under-fitting, Outliers, high leverage and high-dimensionality**. Theses are known factors affecting the overall quality of the model particularly in regression model.  To make it concrete, I am going to define each of them and later on A theoretical consideration and practical approach. Let's start first with **multicollinearity**. Multicollinearity refers to a situation where a number of independent variables in a model are closely correlated to one another particularly in multiple regression model . This can lead to a less reliable model and redundancy. Now that We know the effects that multicollinearity can have on the model, how can We detect it's presence in the model? Well that is what I'm going to cover for next lines. One of the most common  ways of eliminating the problem of multicollinearity is to identify the collinear variables and removing them. We can use correlation matrix amongst  variables. Another way is measuring the Variance Inflation Factors.   Variance Inflation Factors **VIF** quantifies the degree of multicollinearity and measures how much the variance of an estimated regression coefficient is increased because of collinearity. The Following formula is computed for **VIF**  where R2i is the coefficient of determination of the regression equation :
 
 
-![plot of chunk unnamed-chunk-1](/Users/hamze/Desktop/Regression_Model/figures/vif.png)
+![plot of chunk unnamed-chunk-1](figure/vif.png)
 The goal of a good  model is to capture patterns well from the training data that would allows us to make predictions in the future on data the model has never seen. During building model the two mature problems that may occur are **over-fitting** and **under-fitting**. **Over-fitting** is a modelling error, it occurs when the model is describing the noise (Random error) instead of the underlying  relationship. This occurs when a model is excessively complex as a result the model has poor predictive performance. **Under-fitting** refers when the model is not capturing the underlying relationship  of the data. This modelling error occurs  when we fit a linear model to a non linear data, thus the performance of such model is extremely poor. There are some important techniques that we can use to limit over-fitting such as k-fold cross validation and bootstrapping. The other things that I want mention are outliers and high leverage point.  **outlier** is an observation point that is distant from other observations. It is also a data point whose response y does not follow the general trend of the data . **Outlier** may indicate experimental error, these errors are excluded from the dataset. There is no mathematical definition which determines whether or not an observation is an outlier , but There are various methods of outlier detection . Some are graphical such as Residual plot, and cooks-distance. A data point has high leverage if the predictors variable is extremely far away from it's mean. The further the data point is away form it's mean the higher leverage. Outliers and high leverage data points are considered  to be influential, but we have to investigate further to determine whether or not they are actually influential. One general approach widely used to measure influential point is **cook's-distance** or **Cook's-D**. Cook's distance can be used to indicate influential data points that are particularly worth checking, the goal is to detect highly influential observations.  
 The Following formula is computed for **COOK'S D**  where **hii** is the leverage point:
 
 
-![plot of chunk unnamed-chunk-2](/Users/hamze/Desktop/Regression_Model/figures/cook.png)
+![plot of chunk unnamed-chunk-2](figure/cook.png)
 Now that We have a fair understanding about the concept of model tuning. Let's get hands dirty, I'm going to analyse the Major League Baseball Data from the 1986 and 1987 seasons (Hitters) using Multiple Regression Model and all the techniques I've mentioned so far . The data can be found in the ISLR package. The following data has 322 observations of major league players and 20 variables . 
 
 
