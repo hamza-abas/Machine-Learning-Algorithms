@@ -39,12 +39,22 @@ output: pdf_document
 
 In the previous project I've applied Quadratic discriminant analysis which is quiet useful when the decision boundaries are not highly linear. In this project I am going to apply K-nearest neighbors algorithm **(KNN)**. KNN is a non-parametric classification algorithm that makes predictions using the training dataset without learning form the training set. KNN makes no assumptions about the functional form of data . Thus KNN is referred to as a non-parametric machine learning algorithm. k nearest neighbor are defined by their characteristic of classifying unlabeled observations by assigning them the class of similar labeled observations. Traditionally It uses Euclidean distance to find out the nearest neighbour.  Euclidean Distance is the ordinary straight line distance between two points in Euclidean Space. there are other popular distances such as Manhattan distance and Minkowski Distance . We often choose the best distance metric based on the properties of data. However the Euclidean distance is widely used. Euclidean distance is specified by the following formula, where p and q are data points to be compared:
 
-![plot of chunk unnamed-chunk-1](/figure/eucli.png)
+
+```r
+knitr::include_graphics("figure/eucli.png")
+```
+
+![plot of chunk unnamed-chunk-1](figure/eucli.png)
 
 Choosing the value for K doesn't have any limitation, but it is always a good practice to try many different values for K. By definition k is The decision of how many neighbors to be used for Clasification. Therefore Choosing an appropriate k determines the performance of the model. The other thing that I want to mention is that KNN works well with a small number of features , but struggles when **p** is very large. It is highly necessarily to Normalize the data within a range **ex: [0, 1]** this will avoid Wrong distances when calculatig the **Euclidean distances** . It may also be a good idea to standardize your data. Because KNN performs much better if all of the data has the same scale.  The same rescaling method used on the k-NN training dataset must also be applied to the testset. The formula for normalizing is:
 
 
-![plot of chunk unnamed-chunk-2](/figure/normalize2.png)
+
+```r
+knitr::include_graphics("figure/normalize2.png")
+```
+
+![plot of chunk unnamed-chunk-2](figure/normalize2.png)
 
 
 In the next section I will Build a pattern recognition model for detecting the type of breast cancer by appling k-NN algorithm.  Machine learning can automate the identification of cancerous cells, it improves the efficiency of the detection process, allowing physicians to spend less time diagnosing and more time treating the disease, this is a huge breakthrough in the field of computer science allowing us to use An automated screening system which provide greater detection accuracy. 
@@ -56,45 +66,6 @@ The data that I am going to use is Wisconsin Breast Cancer Diagnostic dataset fr
 # Getting and cleaning the data
 
 
-```
-## Loading required package: ggplot2
-```
-
-```
-## Loading required package: caret
-```
-
-```
-## Loading required package: lattice
-```
-
-```
-## Loading required package: MASS
-```
-
-```
-## Classes and Methods for R developed in the
-```
-
-```
-## Political Science Computational Laboratory
-```
-
-```
-## Department of Political Science
-```
-
-```
-## Stanford University
-```
-
-```
-## Simon Jackman
-```
-
-```
-## hurdle and zeroinfl functions by Achim Zeileis
-```
 
 
 ```r
